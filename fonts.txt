@@ -13,3 +13,9 @@ font-family: 'Open Sans', sans-serif;
 Roboto
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
 font-family: 'Roboto', sans-serif;
+
+
+Wet Brush Effect
+Gloria
+<link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+font-family: 'Gloria Hallelujah', cursive;
