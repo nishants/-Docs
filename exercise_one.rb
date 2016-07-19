@@ -57,6 +57,21 @@ end
 
 
 
+class Hello
+  def all
+    each(){|val| puts(" putting : #{val}")};
+  end
+
+  def each
+    for i in 0..5 do
+      yield(i)
+    end
+  end
+end
+
+
+
+Hello.new.all()
 
 
 
