@@ -14,7 +14,7 @@ RSpec::Matchers.define :look_like do |definition |
         if(col_value != definition[col_index])
           error_value      = col_value
           expected_pattern = definition[col_index]
-          expected_pattern = row
+          error_row = row
           error_col        = col_index
 
           return false
@@ -28,7 +28,7 @@ RSpec::Matchers.define :look_like do |definition |
   end
 
   description do
-    "checks user's current zipcode"
+    "test value to match a pattern"
   end
 end
 
@@ -37,7 +37,7 @@ RSpec.describe RSpec::Matchers do
 
   describe "Should create matcher" do
     it "should define matcher" do
-      expect([["1,00,33"]]).to look_like(["1,00,33"])
+      expect([["1,00,33"]]).to look_like(["1,0033"])
     end
   end
 end
