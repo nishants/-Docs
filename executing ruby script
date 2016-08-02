@@ -1,0 +1,168 @@
+http://polishinggems.blogspot.in/2011/06/how-to-evaluate-ruby-script-file-from.html
+
+
+How to evaluate a Ruby script file from within a Ruby application
+
+I recently had the need to call a Ruby file from my Ruby application. I did not want it to pollute my application and I also wanted to pass some arguments to this script and want the result returned to my application.  So how do we do this.
+
+
+There are a few options require, load, open, eval.  The first three simply load files into the application and it is difficult to retrieve the result of the files, so the eval method is the way to go.
+
+
+result = eval(File.open(filename).read) 
+
+
+does the trick, but how do I pass arguments into the eval.  To solve this we need to setup a binding for the eval
+
+
+The following method will do this
+
+
+   def eval_script filename, arguments
+      proc = Proc.new {}
+      result = eval(File.read(filename), proc.binding) 
+   end
+
+
+The interesting line here is  
+
+
+   proc = Proc.new {}
+
+
+On the surface if does not look like it does much, but what it does is creates a Proc that has the bindings of the method.  In other words all variables available to the procedure are bound to it.  Now in the following line when we call
+
+
+   result = eval(File.open(filename).read, proc.binding)
+
+
+we pass these bindings to the context of the evaluation of your script file and as a result the script file has access to your arguments.
+
+
+You will however notice that if an exception is thrown while executing the script file the information in the backtrace is incorrect.  So we want to fix this by changing the filename in the backtrace to the script's filename
+
+
+The final method should look like this
+
+
+
+   def eval_script filename, arguments
+         proc = Proc.new {}
+         eval(File.read(filename), proc.binding, filename)
+   end
+
+
+Posted 6th June 2011 by Cedric Franz
+Labels: call a script eval load open pass arguments require result of a script Ruby script
+View comments
+Polishing Gems
+
+    Classic Flipcard Magazine Mosaic Sidebar Snapshot Timeslide 
+
+Nov
+10
+How to do Ruby's collect() in Coffeescript
+Often you return data from an Ajax call that contains objects, but you need only one or two attributes to populate your autocomplete dropdown or some other list.
+
+For instance lets say that you Ajax call returns and array containing peoples firstnames and last names and an id for the object.  So something like this:
+
+people = [
+
+{id: "1", firstname: "Joe", surname: "Bloggs"},
+
+{id: "2", firstname: "Jane", surname: "Doe"},
+
+{id: "3", firstname: "Steve", surname: "Jobs"}
+
+];
+
+Now I want to create a new array called names that contains a concatenation of firstname and surname.
+
+In Coffeescript you can simply do this:
+
+names = [];
+
+names.push "#{person.firstname} #{person.surname}" for person in people
+
+This requires a quite a bit more code if you want to do this in Javascript directly.
+2
+Sep
+1
+Building AngularJS directive for JQuery-UI: Part 2
+Following on from my previous post... let's add the autocomplete.
+
+If we look at how autocomplete is added to a widget in JQuery UI.  We will see from the example that we simply need to call the autocomplete method on the input and pass it a hash containing the source.  
+
+$( "#tags" ).autocomplete({
+
+source: availableTags
+
+});
+
+So how do we implement this in AngularJS.  We would like the databinding to work and the availableTags to be picked up off our PageController.
+3
+Sep
+1
+Building AngularJS directive for JQuery-UI
+AngularJS is a fantastic framework for building Ajax web clients quickly using Javascript.  The architecture of the framework leads to easier testing, maintenance and much less code.  In this post we look at adding the autocomplete functionality from JQuery UI to use the two-way databinding found in AngularJS.
+
+Let us look at the JQuery UI autocomplete example. If you look at the source of this example you will see that it involved three steps to make the autocomplete work.
+Jul
+27
+Why is Waterfall Model bad?
+I don't believe it is.  Now I am an advocate of agile and that is how I believe development should be done, but have a look at the original document by Winston Royce.  It is a very worthwhile read. He talks about the design, testing, planning etc. all the development phases that we know are valid and need to be done when developing a large software system.
+
+People might say that waterfall involves a long upfront planning process.  The original document does not say this.
+Jun
+6
+Supporting multiple JSON engines
+When building libraries that use JSON it is often critical to allow the developers of these libraries to choose their JSON engine.  The MultiJson librariy solves this problem and provides simple methods to encode and decode JSON as well as switching the underlying JSON engine.
+Jun
+6
+How to evaluate a Ruby script file from within a Ruby application
+I recently had the need to call a Ruby file from my Ruby application. I did not want it to pollute my application and I also wanted to pass some arguments to this script and want the result returned to my application.  So how do we do this.
+
+There are a few options require, load, open, eval.  The first three simply load files into the application and it is difficult to retrieve the result of the files, so the eval method is the way to go.
+4
+Jun
+2
+Ruby Fibers
+I have been looking at Fibers in Ruby to understand exactly what they are doing and I cam across these two very useful reads.  The first one by Dave Thomas at Pragmatic Programmer goes through an example of creating a pipeline using fibers.  The second article is a generic explanation of how fibers work and looking at how they compare to threads.  This article at igvita.com can be found here it was written by Ilya Grigorik the founder and CTO of PostRank.
+May
+25
+Ruby's inject() and collect()
+Recently I wanted to apply a function to the elements of an Array and return a new Array with the results.  Let's assume that I wanted to add a number to each element in an array, but I wanted the original array to remain intact.  Initially, my code looked like this.
+
+def add_number_to_elements num, an_array
+
+result = []
+
+an_array.each {| i | result << (i+num)}
+
+result
+
+end
+
+a = [1,2,3,4]
+
+r = add_number_to_elements 1, a
+
+r = [2,3,4,5]
+
+This looked a little too verbose to me.
+1
+Mar
+18
+Enhancing the currency filter in Google Angular
+To override the currency filter so that you can specify the currency symbol, decimal places, decimal separator and the thousand separator is easy. Firstly, to overriding the default implementation of a filter simple. All you need to do is define it with the same name as the original, but after the original angular.js script has been loaded. To do this we write the following code. angular.filter('currency', function(input, curSymbol, decPlaces, thouSep, decSep) { return input } So now we have a new formatter that does nothing, but takes four parameter and can be called like this. The parameters are separated by a ':' {{ value | currency:"R":2:",":"." }} Now let us look at the code to make this work
+4
+Mar
+18
+Calling a filter in Google Angular from code
+Calling a filter in Angular in code is very easy. For instance to call the number filter which allows you to format a number to a specified number of decimal places. We firstly need to get hold of the function and see what it does. So in you code call.
+
+alert(angular.filter.number);
+
+This displays the function and you will be able to see that it takes two parameters: the value to be formatted and the number of decimal places.
+Loading
+Dynamic Views template. Powered by Blogger.
