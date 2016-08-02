@@ -1,0 +1,20 @@
+
+def clear
+	system "cls" 
+end
+
+def eval_script filename, arguments
+ clear
+ a_param = "wow !"
+ proc = Proc.new {}
+ eval(File.read(filename), proc.binding, filename)
+end
+
+clear
+file_name = "C:/Users/dawn/Documents/xplab/a_script.rb"
+eval_script(file_name, {})
+
+
+a_script.rb
+--------------------------------
+result = {"status" => "passed", "found": a_param}ss
