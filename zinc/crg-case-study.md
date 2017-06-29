@@ -13,7 +13,7 @@
 
 # Project Management Challenges
 - hard to define a gamification exprience in terms of a checklist
-- designer, founder, marketing, technical experts were well aligned on idea but common understanding of end product was missing
+- designer, founder, marketing, technical experts and content writers were lacked a common understanding of end product
 - it was hard to define requirements in terms of backlog, hence creating good user stories was impossible.
 - developers were not confident of task lists, spikes, estimations required to plan the realease.
 - prototyping itself is again hard to estimate, we allowed a product designer to play around with our idea and be free and creative  with whatever he comes up with.
