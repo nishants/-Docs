@@ -2,8 +2,8 @@
 - gamification is different from usual business app, where development is usually driven by a list of features
 - gamification should be experience driven, rather than feature driven.
 - prototyping is the only good way of defining and discovering ur end user exprience.
-- we had four months to deliver the feature
-- we were a bootstrapped startup with a team distributed across the globe.
+- there were four months to deliver the feature 
+- it was a bootstrapped startup with a team distributed across the globe.
 
 # Using Prototyping to Discover End Product
 - we built the first fully functional prototype within a week of initiation
