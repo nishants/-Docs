@@ -28,3 +28,7 @@
 - instead advised them on not using react for a new and critical feature, but begin by re-writting what team had already built
 - technical team ignored advice and moved ahead with building the feature with reactjs.
 - this was mainly driven by developers anxiety (i dont know that cool new thing that earns jobs) and beleif in the fact that because their rockstar programmer  wrote nice crisp code with Rails, so he could do the same with react (inspite of  not having any real project exprience with it)
+- collaboration across team was severly anaemic, ideas were impossible to flow. 
+- only time team came together was a weekly 1 hour call. 
+- separation of product and develivery team was very evident.
+- people had communication in public channels, and product team might often not reply to individual messages.
