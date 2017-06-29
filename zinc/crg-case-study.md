@@ -41,3 +41,4 @@
 - achieving work life balance while working remotely
 - nerd developer's image within the team
 - lack of cooepration from the full time design consultant to the team
+- non-involvement in decision making 
