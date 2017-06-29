@@ -33,3 +33,9 @@
 - separation of product and develivery team was very evident.
 - people had communication in public channels, and product team might often not reply to individual messages.
 - cultural and geographical barriers made it even harder to get the team together.
+
+# Personal Challenges
+- lack of understadning and communication with team
+- baggage of a poorly communicated criticism of UI in early days with team
+- non-alignment with vision and priorities of technical team
+- achieving work life balance while working remotely
