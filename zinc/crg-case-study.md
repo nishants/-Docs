@@ -39,3 +39,5 @@
 - baggage of a poorly communicated criticism of UI in early days with team
 - non-alignment with vision and priorities of technical team
 - achieving work life balance while working remotely
+- nerd developer's image within the team
+- lack of cooepration from the full time design consultant to the team
