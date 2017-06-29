@@ -44,3 +44,8 @@
 - nerd developer's image within the team
 - lack of cooepration from the full time design consultant to the team
 - non-involvement in decision making 
+
+# Other Challenges
+- estimations are abrupt, devs won't have enough info to make a good guess, but still they will have to
+- user stories are large and monolithic, runs in progress forever
+- user stories lack objective tasks, definition of done is missing
