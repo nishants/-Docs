@@ -27,4 +27,4 @@
 - technical team had recently decided to migrate to reactjs based techstack.
 - instead advised them on not using react for a new and critical feature, but begin by re-writting what team had already built
 - technical team ignored advice and moved ahead with building the feature with reactjs.
-- this was mainly driven by developers anxiety (i dont know that cool new thing that earns jobs) and beleif in the fact that because their rockstar programmer  wrote nice crisp code with Rails, and promised he would do the same with react (inspite of  not having any real project exprience with it)
+- this was mainly driven by developers anxiety (i dont know that cool new thing that earns jobs) and beleif in the fact that because their rockstar programmer  wrote nice crisp code with Rails, so he could do the same with react (inspite of  not having any real project exprience with it)
