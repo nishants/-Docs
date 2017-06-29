@@ -1,7 +1,8 @@
-# Mindset Challenges
+# Product Challenges
 - gamification is different from usual business app, where development is usually driven by a list of features
 - gamification should be experience driven, rather than feature driven.
 - prototyping is the only good way of defining and discovering ur end user exprience.
+- we had four months to deliver the feature
 
 # Using Prototyping to Discover End Product
 - we built the first fully functional prototype within a week of initiation
@@ -13,6 +14,7 @@
 - hard to define a gamification exprience in terms of a checklist
 - designer, founder, marketing, technical experts were well aligned on idea but common understanding of end product was missing
 - it was hard to define requirements in terms of backlog, hence creating good user stories was impossible.
+- developers were not confident of task lists, spikes, estimations required to plan the realease.
 - prototyping itself is again hard to estimate, we allowed a product designer to play around with our idea and be creative.
 - prototyping occupied one dedicated resource over the period of 4 weeks.
 
