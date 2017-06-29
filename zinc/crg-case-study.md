@@ -3,8 +3,13 @@
 - gamification should be experience driven, rather than feature driven.
 - prototyping is the only good way of defining and discovering ur end user exprience.
 
-# Using prototyping to discover end product
+# Using Prototyping to Discover End Product
 - we built the first fully functional prototype within a week of initiation
 - we kept on building on top of the prototype for four weeks
 - every week we demonstrated the prototype to all of team
 - no user stories were ready when we began the prototyping for the first time
+
+# Project Management Challenges
+- hard to define a gamification exprience in terms of a checklist
+- designer, founder, marketing, technical experts were well aligned on idea but common understanding of end product was missing
+- it was hard to define requirements in terms of backlog, hence creating good user stories was impossible.
