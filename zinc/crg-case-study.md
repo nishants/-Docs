@@ -20,19 +20,21 @@
 - prototyping occupied one dedicated resource over the period of 4 weeks.
 
 # Consulting Challenges
+- collaboration across team was severly anaemic, ideas were impossible to flow. 
+- only time team came together was a weekly 1 hour call. 
+- separation of product and develivery team was very evident.
+- team members had communication in public channels, and product team might often not reply to direct messages.
+- cultural and geographical barriers made it even harder to get the team together.
+
 - technical team lacked a culture of working with consultants 
 - team morale was low, and on first interview with a developer, he confessed of being a "foot sodier" and felt he had no contribution in decision making
 - technical team was thinking in terms of techs and framework, and there was a lack of problem solving approach.
 - technical team lacked diversity, all devs were males with background of fullstack rails developer.
+
 - technical team had recently decided to migrate to reactjs based techstack.
 - instead advised them on not using react for a new and critical feature, but begin by re-writting what team had already built
 - technical team ignored advice and moved ahead with building the feature with reactjs.
 - this was mainly driven by developers anxiety (i dont know that cool new thing that earns jobs) and beleif in the fact that because their rockstar programmer  wrote nice crisp code with Rails, so he could do the same with react (inspite of  not having any real project exprience with it)
-- collaboration across team was severly anaemic, ideas were impossible to flow. 
-- only time team came together was a weekly 1 hour call. 
-- separation of product and develivery team was very evident.
-- people had communication in public channels, and product team might often not reply to individual messages.
-- cultural and geographical barriers made it even harder to get the team together.
 
 # Personal Challenges
 - lack of understadning and communication with team
