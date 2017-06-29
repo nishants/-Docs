@@ -21,4 +21,4 @@
 - the feature itself being so complex, was a terrible starting point to migration to new tech stack.
 - instead advised them on not using react for a new and critical feature, but begin by re-writting what we had already built
 - technical team ignored advice and moved ahead with building the feature with reactjs.
-- this was mainly driven by developers anxiety (i dont know that cool new thing that earns jobs) and beleif in the fact that because their rockstar programmer  wrote nice crisp code with Rails, and promised he would do the same with react (instead of having no real project exprience with it)
+- this was mainly driven by developers anxiety (i dont know that cool new thing that earns jobs) and beleif in the fact that because their rockstar programmer  wrote nice crisp code with Rails, and promised he would do the same with react (inspite of  not having any real project exprience with it)
