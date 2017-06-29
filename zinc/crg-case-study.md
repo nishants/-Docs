@@ -32,3 +32,4 @@
 - only time team came together was a weekly 1 hour call. 
 - separation of product and develivery team was very evident.
 - people had communication in public channels, and product team might often not reply to individual messages.
+- cultural and geographical barriers made it even harder to get the team together.
