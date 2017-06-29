@@ -16,7 +16,7 @@
 - designer, founder, marketing, technical experts were well aligned on idea but common understanding of end product was missing
 - it was hard to define requirements in terms of backlog, hence creating good user stories was impossible.
 - developers were not confident of task lists, spikes, estimations required to plan the realease.
-- prototyping itself is again hard to estimate, we allowed a product designer to play around with our idea and be creative.
+- prototyping itself is again hard to estimate, we allowed a product designer to play around with our idea and be free and creative  with whatever he comes up with.
 - prototyping occupied one dedicated resource over the period of 4 weeks.
 
 # Consulting Challenges
