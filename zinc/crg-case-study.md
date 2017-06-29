@@ -13,3 +13,8 @@
 - hard to define a gamification exprience in terms of a checklist
 - designer, founder, marketing, technical experts were well aligned on idea but common understanding of end product was missing
 - it was hard to define requirements in terms of backlog, hence creating good user stories was impossible.
+- prototyping itself is again hard to estimate, we allowed a product designer to play around with our idea and be creative.
+- prototyping occupied one dedicated resource over the period of 4 weeks.
+
+# Consulting Challenges
+- technical team had
