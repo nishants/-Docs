@@ -27,7 +27,7 @@
 - cultural and geographical barriers made it even harder to get the team together.
 
 - technical team lacked a culture of working with consultants 
-- *technical team assigns task to keep individuals busy instead of creating work asynchronously and allowing team to pick it up*
+- **technical team assigns task to keep individuals busy instead of creating work asynchronously and allowing team to pick it up**
 - team morale was low, and on first interview with a developer, he confessed of being a "foot sodier" and felt he had no contribution in decision making
 - technical team was thinking in terms of techs and framework, and there was a lack of problem solving approach.
 - technical team lacked diversity, all devs were males with background of fullstack rails developer.
