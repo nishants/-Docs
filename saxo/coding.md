@@ -159,7 +159,19 @@ import classNames from 'classnames';
 const classes = classNames(this.props.customClass, 'grid grid--series');
  
 <Component className={classes} />  
+
+// bad
+<Component className={classNames({'fooClass': this.prop.isFoo, 'barClass': this.prop.isBar})} />
+ 
+// good
+const classes = classNames({
+   'fooClass': this.prop.isFoo,
+   'barClass': this.prop.isBar
+});
+ 
+<Component className={classes} /> 
 ```
 
+Use **PureComponent** by default
 
 
