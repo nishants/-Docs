@@ -115,9 +115,51 @@ Component.propTypes = {
 };
 ```
 
-            
-            
+***Using refs***
+```javascript
+// bad (as creates new function on each render())
+render() {
+    <Component ref={ref => this.fooEl = ref} />
+}
+ 
+ // good (locate ref setter alongside bound event handlers)
+constructor() {
+    super();
+ 
+    // refs
+    this.setFooEl = (ref) => { this.fooEl = ref };
+}
+ 
+render() {
+    <Component ref={this.setFooEl} />
+}
+```
 
+react-bind-handler node module is use used to automatically bind the methods starting with name handle* to the "this" : 
+```javascript
+class Component extends React.Component {
+    constructor() {
+        super();
+        // this.handleTap is not bound to this context here
+    }
+    handleTap(evt) {}
+};
+ 
+export default bindHandlers(Component); 
+```
+            
+Always use the classnames library  : 
+```javascript
+import classNames from 'classnames';
+ 
+// bad (string interpolation)
+<Component className={`${this.props.customClass} grid grid--series`} /> 
+ 
+// good
+const classes = classNames(this.props.customClass, 'grid grid--series');
+ 
+<Component className={classes} />  
+```
 
 
 
