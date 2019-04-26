@@ -22,13 +22,14 @@ iterator.next() // return {value: undefined, done: true}
 function* generator(value){
   console.log(yield);
   console.log('I gave', value, 'you gave :', yield value);
-  console.log('I gave', value, 'you gave :', yield value);
 }
 
 let iterator = generator(13);
-iterator.next(999) // returns {value: 13, done: false}
-iterator.next(888) // returns {value: 23, done false}
-iterator.next(777) // return {value: undefined, done: true}
+iterator.next(999) // returns {value: undefined, done: false}, console.log does not run yet
+
+iterator.next(888) // prints 888 and returns {value: 13, done: false}
+iterator.next(777) // prints "I gave 13 you gave : 777" and returns {value: 13, done: false} 
+iterator.next(666) // return {value: undefined, done: true}
 ```
 
 Question : 
