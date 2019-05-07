@@ -1,4 +1,24 @@
+### Commit guidelines
+- commit message alwasy startgs with ***"#[tfs-task-id] Add/Adds/Added ..."***
+- first line should have 80 chars or less, must be followed by a blank line : 
+   ```
+    // bad
+    Merge bug-671254 to master
+    Fix rounding
+    671254 Fix rounding of open order prices
+    #671254 Fix rounding of open order prices for certain instruments that require an extra check on the asset type to determine the number of decimals to use
+    #671254 Fixed rounding of open order prices
 
+
+    // good
+    #671254 Fix rounding of open order prices
+
+    Certain instruments require an extra check on the asset type to determine the number of decimals to use.
+    ```
+ - ***Note:*** The TFS PR system will automatically add a "Merged PR 39477" 
+ 
+
+### Coding standards
 ```javascript
 // bad
 <Component
