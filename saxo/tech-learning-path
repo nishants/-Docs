@@ -1,0 +1,6 @@
+Technical Path
+- learn cypress
+- learn enzye/jest
+- learn flow
+- create a file loader webpack plugin as in : js/build/webpack/appFilesLoaderPlugin.js
+- creating a babel plugin
