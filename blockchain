@@ -1,10 +1,15 @@
 Audience types : 
+- TECHNICAL (understands hashes, algorithms, data structures)
+- NON_TECHNICAL (mangers/founders)
 
-- TECHNICAL
-- NON_TECHNICAL
+# Intoruction to Blockchain 
 
-Intoruction to Blockchain 
+### Objectives
+- to be able to understand what blockchain is
+- NON_TECHNICAL 
+- TECHNICAL must be able to read and understand the technical white papers of bitcoin, ethereum, eosio
 
+### Conntents
 - concept of block chain story : beads based trueth
 - concepts 
   - hashing (NON_TECHNICAL)
