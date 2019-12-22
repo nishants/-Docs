@@ -11,6 +11,7 @@
   const o = {};
   console.log(o === Object.freeze(o))
   ```
+5. Why would you need immutable js lib if there is Object.freeze method in javascript ?
 
 
 
@@ -28,3 +29,4 @@ Ans
   - `Objet.isExtensible()` : 
   
 4. Object.freeze does not change object. So awnser to true
+5. immutable js does not just lock javascript objects, but also supports working with immutable objects.
