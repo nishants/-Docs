@@ -20,10 +20,11 @@ Ans
 1- curly braces are faster than constructor
 2- only primitives are immutable
 3. following are immutability releated methods in javascipt : 
-  - `Objet.seal()`      : does not allow adding props to object, 
-  - `Objet.isSealed()`  : 
+  - `Objet.seal()`      : does not allow adding/removing props to object (allows changing values), 
+  - `Objet.preventExtension()` : prevents new properties from being added
   - `Objet.freeze()`    : does not allow adding/removing/updating props in object
+  - `Objet.isSealed()`  : 
   - `Objet.isFrozen()`  : 
-  - `Objet.preventExtension()` : 
-  - `Objet.isExtensible()`
+  - `Objet.isExtensible()` : 
+  
 4. Object.freeze does not change object. So awnser to true
